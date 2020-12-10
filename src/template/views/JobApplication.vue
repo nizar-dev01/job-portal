@@ -1,5 +1,5 @@
 <template>
-  JOB VIEW
+  JOB APPLICATION
 </template>
 
 <script>

@@ -1,0 +1,41 @@
+
+.job-box {
+    padding: 25px 30px;
+    box-shadow: 0 0 20px -5px #d2d2d2;
+    border-radius: 15px;
+    background: white;
+    .top{
+        .col{
+            display: flex;
+            .text{
+                flex-grow: 1;
+            }
+        }
+        .title{
+            margin: 0;
+            font-size: 18px;
+        }
+        .info{
+            margin: 0;
+            color: #7c7797;
+            font-size: 13px;
+            line-height: 17px;
+        }
+    }
+    .details{
+        .job-details{
+            font-size: 14px;
+            line-height: 25px;
+            margin: 10px 15px;
+            list-style: circle;
+        }
+    }
+    .actions{
+        display: flex;
+        justify-content: space-between;
+        .icon-round{
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

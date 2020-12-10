@@ -1,4 +1,7 @@
 import Home from '@v/Home'
+import JobView from '@v/JobView'
+import JobApplication from '@v/JobApplication'
+import JobEdit from '@v/JobEdit'
 export default [
     {
         path: '/home',
@@ -11,5 +14,20 @@ export default [
     {
         path: '/',
         redirect: '/home'
+    },
+    {
+        path: '/job/:slug',
+        name: 'job-view',
+        component: JobView
+    },
+    {
+        path: '/job/:slug/application',
+        name: 'job-application',
+        component: JobApplication
+    },
+    {
+        path: '/job/:slug/edit',
+        name: 'job-application',
+        component: JobEdit
     }
 ]

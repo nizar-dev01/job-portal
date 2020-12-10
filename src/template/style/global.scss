@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background: #efe9ff;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -30,4 +31,38 @@ ul {
 
 button {
     cursor: pointer;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    .col{
+        padding: 15px;
+        width: 100%;
+    }
+}
+.bt{
+    $cl: #523c84;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: $cl;
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+    &.link{
+        color: $cl;
+        background: none;
+    }
+    &.icon-round{
+        border-radius: 50%;
+    }
+    &.outline{
+        border: 1px solid $cl;
+        color: $cl;
+        background: white;
+    }
 }

@@ -1,5 +1,5 @@
 <template>
-  JOB VIEW
+  <editor></editor>
 </template>
 
 <script>

@@ -8,76 +8,7 @@
     .job-li{
         width: 33.333%;
         padding: 15px;
-    }
-}
-
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    .col{
-        padding: 15px;
-        width: 100%;
-    }
-}
-.bt{
-    $cl: #523c84;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background: $cl;
-    color: white;
-    font-size: 13px;
-    font-weight: 900;
-    &.link{
-        color: $cl;
-        background: none;
-    }
-    &.icon-round{
-        border-radius: 50%;
-    }
-    &.outline{
-        border: 1px solid $cl;
-        color: $cl;
-        background: white;
-    }
-}
-.job-box {
-    padding: 25px 30px;
-    box-shadow: 0 0 15px #ececec;
-    border-radius: 15px;
-    .top{
-        .col{
-            display: flex;
-            .text{
-                flex-grow: 1;
-            }
-        }
-        .title{
-            margin: 0;
-        }
-        .info{
-            margin: 0;
-            color: #7c7797;
-            font-size: 13px;
-            line-height: 17px;
-        }
-    }
-    .details{
-        .job-details{
-            font-size: 14px;
-            line-height: 25px;
-            margin: 10px 15px;
-            list-style: circle;
-        }
-    }
-    .actions{
-        display: flex;
-        justify-content: space-between;
-        .icon-round{
-            height: 30px;
-            width: 30px;
-        }
+        min-width: 400px;
+        flex-grow: 1;
     }
 }
