@@ -1,17 +1,22 @@
 <template>
     <header-component></header-component>
-    <slot></slot>
-    <footer-component></footer-component>
+    <div class="spacer">
+        <slot></slot>
+    </div>
 </template>
 
 <script>
 import headerComponent from './header-component'
-import footerComponent from './footer-component'
 export default {
     name: 'layout',
     components:{
-        headerComponent,
-        footerComponent
+        headerComponent
     }
 }
 </script>
+
+<style
+  lang="scss"
+  src="./style/layout.scss"
+  scoped
+></style>

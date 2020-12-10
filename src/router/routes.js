@@ -5,7 +5,7 @@ export default [
         name: 'home',
         component: Home,
         meta:{
-            layout:'blank'
+            layout:'app'
         }
     },
     {
