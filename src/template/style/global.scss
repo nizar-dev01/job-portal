@@ -1,91 +1,33 @@
-$hidpi1:1800px;
-$xxxl:1500px;
-$xxl:1240px;
-$xl:1199px;
-$lg:991px;
-$md:768px;
-$xmd:870px;
-$sm:580px;
-$xs:470px;
+@import '~/mixins.scss';
+* {
+    box-sizing: border-box;
+}
 
-@mixin hidpi1{
-    @media screen and (max-width:$hidpi1){
-        @content;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li,
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
     }
 }
 
-@mixin xxxl{
-    @media screen and (max-width:$xxxl){
-        @content;
-    }
-}
-@mixin xxl {
-    @media screen and (max-width:$xxl) {
-        @content;
-    }
-}
-
-@mixin xl {
-    @media screen and (max-width:$xl) {
-        @content;
-    }
-}
-
-@mixin lg {
-    @media screen and (max-width:$lg) {
-        @content;
-    }
-}
-
-@mixin xmd {
-    @media screen and (max-width:$xmd) {
-        @content;
-    }
-}
-
-@mixin md {
-    @media screen and (max-width:$md) {
-        @content;
-    }
-}
-
-@mixin sm {
-    @media screen and (max-width:$sm) {
-        @content;
-    }
-}
-
-@mixin xs {
-    @media screen and (max-width:$xs) {
-        @content;
-    }
-}
-
-
-// style sets
-@mixin flex {
-    display: flex;
-}
-
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin justify-center {
-    display: flex;
-    justify-content: center;
-}
-
-@mixin align-center {
-    display: flex;
-    align-items: center;
-}
-
-@mixin absolute-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+button {
+    cursor: pointer;
 }
