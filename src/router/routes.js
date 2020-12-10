@@ -5,6 +5,7 @@ import JobEdit from '@v/JobEdit'
 import JobCreate from '@v/JobCreate'
 import Login from '@v/Login'
 import Account from '@v/Account'
+import Applications from '@v/Applications'
 export default [
     {
         path: '/home',
@@ -59,6 +60,14 @@ export default [
         path: '/account',
         name: 'account',
         component: Account,
+        meta: {
+            user: true
+        }
+    },
+    {
+        path: '/applications',
+        name: 'applications',
+        component: Applications,
         meta: {
             user: true
         }
