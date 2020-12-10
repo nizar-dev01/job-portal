@@ -2,6 +2,9 @@ import Home from '@v/Home'
 import JobView from '@v/JobView'
 import JobApplication from '@v/JobApplication'
 import JobEdit from '@v/JobEdit'
+import JobCreate from '@v/JobCreate'
+import Login from '@v/Login'
+import Account from '@v/Account'
 export default [
     {
         path: '/home',
@@ -27,7 +30,22 @@ export default [
     },
     {
         path: '/job/:slug/edit',
-        name: 'job-application',
+        name: 'job-edit',
         component: JobEdit
+    },
+    {
+        path: '/job/create',
+        name: 'job-create',
+        component: JobCreate
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: Login
+    },
+    {
+        path: '/account',
+        name: 'account',
+        component: Account
     }
 ]

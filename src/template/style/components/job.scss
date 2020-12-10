@@ -1,9 +1,6 @@
-
 .job-box {
     padding: 25px 30px;
-    box-shadow: 0 0 20px -5px #d2d2d2;
     border-radius: 15px;
-    background: white;
     .top{
         .col{
             display: flex;
@@ -13,18 +10,18 @@
         }
         .title{
             margin: 0;
-            font-size: 18px;
+            font-size: 20px;
         }
         .info{
             margin: 0;
             color: #7c7797;
-            font-size: 13px;
-            line-height: 17px;
+            line-height: 22px;
+            font-size: 15px;
         }
     }
     .details{
         .job-details{
-            font-size: 14px;
+            font-size: 15px;
             line-height: 25px;
             margin: 10px 15px;
             list-style: circle;
@@ -37,5 +34,9 @@
             height: 30px;
             width: 30px;
         }
+    }
+    .like{
+        font-size: 20px;
+        margin-left: auto;
     }
 }

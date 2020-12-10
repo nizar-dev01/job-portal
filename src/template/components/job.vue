@@ -1,5 +1,5 @@
 <template>
-    <div v-if="job" class="job-box">
+    <div v-if="job" class="job-box bgbx">
         <div class="row top">
             <div class="col">
                 <div class="text">
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="details">
+        <div class="details" v-if="detail">
             <ul class="col job-details">
                 <li>detail 1 goes here</li>
                 <li>detail 2 goes here</li>
@@ -27,21 +27,31 @@
             <router-link
                 class="bt link"
                 :to="`/job/${'job-slug'}`"
+                v-if="!detail"
             >View More..</router-link>
-            <button class="bt icon-round outline">S</button>
+            <button
+                type="button"
+                class="bt strip like"
+                @click="like = !like"
+                :key="like"
+            >
+                <icon :icon="[ like ? 'fas' : 'far' ,'heart']" />
+            </button>
         </div>
-    </div>
-    <div v-else-if="edit" class="edit-box">
-
     </div>
 </template>
 
 <script>
     export default {
         name: 'job',
+        data(){
+            return {
+                like: false
+            }
+        },
         props:{
-            edit: Boolean,
-            job: Boolean
+            job: Boolean,
+            detail: Boolean
         }
     }
 </script>

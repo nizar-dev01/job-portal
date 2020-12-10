@@ -1,0 +1,29 @@
+@import '~c/editor.scss';
+.resume-bt{
+    font-size: 15px;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.resume-view{
+    display: flex;
+    align-items: center;
+}
+
+.bt.action{
+    $ofst: 20px;
+    height: $ofst;
+    width: $ofst;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.input-group.submit{
+    display: flex;
+    .bt.submit{
+        background: #53d853;
+    }
+}

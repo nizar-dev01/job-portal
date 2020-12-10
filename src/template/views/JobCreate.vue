@@ -1,12 +1,12 @@
 <template>
-    <h2 class="page-title">Edit Job</h2>
+    <h2 class="page-title">Create a Job</h2>
     <jobEditor />
 </template>
 
 <script>
 import jobEditor from '@c/job-editor'
 export default {
-    name: 'job-edit',
+    name: 'job-create',
     components:{
         jobEditor
     }

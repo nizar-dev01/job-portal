@@ -50,19 +50,103 @@ button {
     border-radius: 5px;
     background: $cl;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 900;
     text-decoration: none;
     &.link{
         color: $cl;
         background: none;
+        padding: 5px 0;
     }
     &.icon-round{
         border-radius: 50%;
+    }
+    &.strip{
+        border: none;
+        background: none;
+        padding: 0;
+        color: $cl;
     }
     &.outline{
         border: 1px solid $cl;
         color: $cl;
         background: white;
+    }
+    &.big {
+        height: 50px;
+        min-width: 150px;
+        font-size: 20px;
+        border-radius: 8px;
+        padding:  5px 25px;
+    }
+    &.danger{
+        background: $danger;
+        color: white;
+    }
+}
+.bgw{
+    background: white;
+}
+.bgbx{
+    box-shadow: 0 0 20px -5px #d2d2d2;
+    background: white;
+}
+.pagebx{
+    padding: 40px 45px;
+    border-radius: 15px;
+    margin: -10px;
+    margin-bottom: 80px;
+}
+
+.input{
+    width: 100%;
+    &.text{
+        height: 45px;
+        border: 1px solid $input-border;
+        color: inherit;
+        border-radius: 5px;
+        padding: 0 16px;
+        font-size: 16px;
+    }
+    &.hidden{
+        display: none;
+    }
+}
+.quillWrapper.editor{
+    .ql-toolbar{
+        border-color: $input-border;
+        border-radius: 5px 5px 0 0;
+    }
+    .ql-container{
+        border-color: $input-border;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.page-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 55px;
+}
+
+
+.input-group{
+    padding: 10px;
+    .field-name{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .input{
+        &.editor{
+            .ql-toolbar .ql-snow{
+                border-color: $input-border;
+            }
+        }
+    }
+    &.submit{
+        margin: -10px;
+        .bt{
+            margin: 10px;
+        }
     }
 }
