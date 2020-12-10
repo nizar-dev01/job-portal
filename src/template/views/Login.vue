@@ -12,7 +12,7 @@
         <div class="input-group">
             <h4 class="field-name">Password</h4>
             <input
-                type="text"
+                type="password"
                 class="input text"
                 v-model="password"
                 @keydown.enter="submit"

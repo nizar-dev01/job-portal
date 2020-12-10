@@ -2,15 +2,27 @@
     <div class="job-editor bgbx pagebx">
         <div class="input-group">
             <h4 class="field-name">Your Name</h4>
-            <input type="text" class="input text">
+            <input
+                type="text"
+                class="input text"
+                v-model="application.name"
+            />
         </div>
         <div class="input-group">
             <h4 class="field-name">Email</h4>
-            <input type="text" class="input text">
+            <input
+                type="text"
+                class="input text"
+                v-model="application.email"
+            />
         </div>
         <div class="input-group">
             <h4 class="field-name">Phone Number</h4>
-            <input type="text" class="input text">
+            <input
+                type="text"
+                class="input text"
+                v-model="application.phone"
+            />
         </div>
         <div class="input-group">
             <h4 class="field-name">Your Resume</h4>
@@ -43,11 +55,14 @@
         <div class="input-group" v-if="addCover">
             <h4 class="field-name">
                 Cover Letter 
-                <button class="action danger bt strip" @click="addCover = application.coverLetter = null">
+                <button class="action danger bt strip" @click="addCover = false">
                     <icon icon="times" />
                 </button>
             </h4>
-            <editor class="input editor" v-model="test"></editor>
+            <editor
+                class="input editor"
+                v-model="application.coverLetter"
+            ></editor>
         </div>
         <div class="input-group" v-else>
             <button
@@ -73,7 +88,10 @@ export default {
             addCover: false,
             application:{
                 resume: null,
-                coverLetter: null
+                name:'',
+                email: '',
+                phone: '',
+                coverLetter: ''
             }
         }
     },
