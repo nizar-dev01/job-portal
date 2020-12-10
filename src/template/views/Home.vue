@@ -8,6 +8,8 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style
+  src="~v/home.scss"
+  lang="scss"
+  scoped
+></style>
