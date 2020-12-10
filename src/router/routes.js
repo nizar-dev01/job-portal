@@ -26,26 +26,41 @@ export default [
     {
         path: '/job/:slug/application',
         name: 'job-application',
-        component: JobApplication
+        component: JobApplication,
+        meta: {
+            user: true
+        }
     },
     {
         path: '/job/:slug/edit',
         name: 'job-edit',
-        component: JobEdit
+        component: JobEdit,
+        meta: {
+            user: true
+        }
     },
     {
         path: '/job/create',
         name: 'job-create',
-        component: JobCreate
+        component: JobCreate,
+        meta: {
+            user: true
+        }
     },
     {
         path: '/login',
         name: 'login',
-        component: Login
+        component: Login,
+        meta:{
+            visitor: true
+        }
     },
     {
         path: '/account',
         name: 'account',
-        component: Account
+        component: Account,
+        meta: {
+            user: true
+        }
     }
 ]

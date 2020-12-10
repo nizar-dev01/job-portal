@@ -44,7 +44,6 @@ button {
     }
 }
 .bt{
-    $cl: #523c84;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -58,7 +57,7 @@ button {
         background: none;
         padding: 5px 0;
     }
-    &.icon-round{
+    &.round{
         border-radius: 50%;
     }
     &.strip{
@@ -70,7 +69,11 @@ button {
     &.outline{
         border: 1px solid $cl;
         color: $cl;
-        background: white;
+        background: none;
+        &:hover{
+            background: $cl;
+            color: white;
+        }
     }
     &.big {
         height: 50px;

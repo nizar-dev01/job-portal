@@ -1,6 +1,6 @@
 <template>
     <h2 class="page-title">Create a Job</h2>
-    <jobEditor />
+    <jobEditor create />
 </template>
 
 <script>

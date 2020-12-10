@@ -1,5 +1,7 @@
 <template>
-    <header-component></header-component>
+    <div class="spacer">
+        <header-component></header-component>
+    </div>
     <div class="spacer">
         <slot></slot>
     </div>

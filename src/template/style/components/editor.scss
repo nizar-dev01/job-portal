@@ -1,1 +1,21 @@
 @import '~/mixins.scss';
+.job-editor{
+    position: relative;
+}
+.input-group.submit{
+    display: flex;
+    align-items: center;
+}
+.bt.view{
+    $ofst: 35px;
+    height: $ofst;
+    width: $ofst;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}

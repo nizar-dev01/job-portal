@@ -20,12 +20,9 @@
         }
     }
     .details{
-        .job-details{
-            font-size: 15px;
-            line-height: 25px;
-            margin: 10px 15px;
-            list-style: circle;
-        }
+        padding: 10px 0;
+        border-top: 1px solid;
+        margin-top: 10px;
     }
     .actions{
         display: flex;
