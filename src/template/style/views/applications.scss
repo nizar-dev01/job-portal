@@ -1,0 +1,11 @@
+.app-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    .app-li{
+        padding: 15px;
+        width: 50%;
+        min-width: 400px;
+        flex-grow: 1;
+    }
+}

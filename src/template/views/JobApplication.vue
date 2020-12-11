@@ -1,14 +1,14 @@
 <template>
     <h2 class="page-title">Application Form</h2>
-    <application />
+    <application-form />
 </template>
 
 <script>
-import application from '@c/application'
+import applicationForm from '@c/application-form'
 export default {
     name: 'job-create',
     components:{
-        application
+        applicationForm
     }
 }
 </script>

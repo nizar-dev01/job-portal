@@ -69,7 +69,7 @@ export default [
         name: 'applications',
         component: Applications,
         meta: {
-            user: true
+            // user: true
         }
     }
 ]

@@ -1,5 +1,5 @@
 <template>
-    <div v-if="job" class="job-box bgbx">
+    <div v-if="job" class="job-box bgbx databx">
         <div class="row top">
             <div class="col">
                 <div class="text">
