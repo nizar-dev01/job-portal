@@ -1,5 +1,8 @@
 
 const configureWebpack = require('./webpack.config');
 module.exports = {
-    configureWebpack
+    configureWebpack,
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/job-portal/'
+    : '/'
 }
