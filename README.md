@@ -1,4 +1,4 @@
-# JOB Portal
+# Job Portal Website
 [DEMO](https://nizar-dev01.github.io/job-portal)
 
 ## Project setup
