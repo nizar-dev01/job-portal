@@ -25,6 +25,14 @@
             />
         </div>
         <div class="input-group">
+            <h4 class="field-name">Address</h4>
+            <input
+                type="text"
+                class="input text"
+                v-model="application.address"
+            />
+        </div>
+        <div class="input-group">
             <h4 class="field-name">Your Resume</h4>
             <input
                 type="file"
@@ -75,7 +83,12 @@
         </button>
         </div>
         <div class="input-group submit">
-            <button class="bt big submit" type="button">Apply</button>
+            <button
+                @click="submit"
+                class="bt big submit"
+                type="button"
+                v-loader="loading"
+            >Apply</button>
         </div>
     </div>
 </template>
@@ -86,13 +99,21 @@ export default {
     data(){
         return {
             addCover: false,
+            loading: false,
             application:{
                 resume: null,
                 name:'',
                 email: '',
                 phone: '',
-                coverLetter: ''
+                address: '',
+                coverLetter: '',
+                job_slug: ''
             }
+        }
+    },
+    computed:{
+        user(){
+            return this.$store.getters['data/user']
         }
     },
     methods:{
@@ -102,6 +123,27 @@ export default {
                 {name,type,size} = file,
                 resume = { name, type, size, file }
             this.application.resume = resume
+        },
+        submit(){
+            if(this.loading) return
+            this.loading = true
+            this.$store.dispatch('data/applyForJob',this.application)
+            .then(r=>{
+                if(r.status==200){
+                    alert('Done :)')
+                    this.$router.push('/').catch(e=>e)
+                }
+            }).catch(()=>alert('Something went wrong'))
+            .finally(()=>this.loading = false)
+        }
+    },
+    created(){
+        this.application.job_slug = this.$route.params.slug
+        if(this.user){
+            console.log('logged in user',this.user)
+            for(const prop in this.application){
+                if(this.user[prop]) this.application[prop] = this.user[prop]
+            }
         }
     }
 }
