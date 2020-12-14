@@ -72,10 +72,6 @@ import { mapGetters } from 'vuex'
             job: Boolean,
             detail: Boolean,
             data: Object
-        },
-        created(){
-            console.log(this.userId)
-            console.log(this.data.created_by)
         }
     }
 </script>
