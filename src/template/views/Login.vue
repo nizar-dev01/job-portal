@@ -7,6 +7,7 @@
                 type="text"
                 class="input text"
                 v-model="email"
+                @keydown.enter.prevent="$refs.pwdInput.focus()"
             >
         </div>
         <div class="input-group">
@@ -15,6 +16,7 @@
                 type="password"
                 class="input text"
                 v-model="password"
+                ref="pwdInput"
                 @keydown.enter="submit"
             />
         </div>
