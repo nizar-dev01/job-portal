@@ -20,7 +20,7 @@
               @click="$router.push('/applications').catch(e=>e)"
               v-if="userType === 0"
             >
-              Job Applications
+              View Applications
             </li>
             <li
               class="logout"
