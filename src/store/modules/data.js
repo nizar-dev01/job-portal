@@ -5,26 +5,26 @@
                 layout: 'tst',
                 users:[
                     {
-                        name: 'Nizar',
-                        email: 'nizar.dev01@gmail.com',
+                        name: 'Recruiter One',
+                        email: 'recruiter@abc.in',
                         password: 'password',
                         phone: '+91 768584732134',
-                        address: 'Address Line 1, Example Street',
+                        address: 'Address of Recruiter 1, Example Street',
                         type: 0,
                         id: 1
                     },
                     {
-                        name: 'Jason',
-                        email: 'jason@gmail.com',
+                        name: 'Candidate One',
+                        email: 'candidate@abc.in',
                         password: 'password',
                         phone: '+91 768584732134',
-                        address: 'Address Line 1, Example Street',
+                        address: 'Address of Candidate 1, Example Street',
                         type: 1,
                         id: 2
                     },
                     {
                         name: 'Thomas',
-                        email: 'thomas@gmail.com',
+                        email: 'thomas@abc.in',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address Line 1, Example Street',
@@ -33,7 +33,7 @@
                     },
                     {
                         name: 'Melissa',
-                        email: 'melissa@gmail.com',
+                        email: 'melissa@abc.in',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address Line 1, Example Street',
@@ -66,7 +66,7 @@
                     },
                     {
                         id: 3,
-                        created_by: 2,
+                        created_by: 1,
                         title: 'Full Stack Developer',
                         company: 'Imagine World Private Limited',
                         location: 'Govt Cyber Park, Clicut, Kerala',
@@ -80,12 +80,12 @@
                     {
                         id: 1,
                         slug: 'app-1-slug',
-                        name: 'Muhammed Nizar K',
-                        email: 'nizar.example@gmail.com',
+                        name: 'Imaginary Candidate',
+                        email: 'candidate@abc.in',
                         phone: '+91 456378213509',
-                        address: 'Koduvally, Calicut, Kerala',
-                        resume: 'som.link/file',
-                        cover:'<h1>This is a Cover Letter</h1>',
+                        address: 'Atlantis island',
+                        resume: null,
+                        cover:'<p><em>Dear Hiring Manager,</em></p> <p><em>In my five-year career as a paralegal, I have honed my legal research and writing skills, and the attorneys I’ve worked with have complimented me on my command of case law and litigation support. Spiegel Law Firm’s 20 years in practice proves that the firm has strong values and excellent attorneys, which is why I want to be a part of the Spiegel Law Firm team.</em></p> <p><em>I currently serve as a paralegal for Chandler LLC, where I work closely with the partners on a number of high-priority cases. During my time here, I implemented a new calendar system that ensures timely filing of court papers. This system has prevented missed deadlines and allowed for better organization of internal and client meetings.</em></p> <p><em>Previously, as a paralegal for the Neuerburg Law Firm, I received praise for my overall support of the legal team and my positive attitude.</em> </p> <p><em>My further qualifications include a bachelor’s degree from Rutgers University, a paralegal certificate, and training in LexisNexis, Westlaw, and Microsoft Office Suite.</em></p> <p><em>I would love the opportunity to discuss how I can contribute to your legal team. Thank you in advance for your consideration, and I look forward to hearing from you.</em></p> <p><em>Sincerely,</em><br> <em>Chase Broadstein</em><br> <em>chasebroadstein@emailcentral.com</em><br> <em>(222) 222-2222</em></p>',
                         job_slug: 'job-1-slug',
                         job_by: 1
                     }
