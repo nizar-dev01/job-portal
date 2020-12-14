@@ -6,6 +6,7 @@ import JobCreate from '@v/JobCreate'
 import Login from '@v/Login'
 import Account from '@v/Account'
 import Applications from '@v/Applications'
+import Application from '@v/Application'
 export default [
     {
         path: '/home',
@@ -69,7 +70,15 @@ export default [
         name: 'applications',
         component: Applications,
         meta: {
-            // user: true
+            user: true
+        }
+    },
+    {
+        path: '/application/:slug',
+        name: 'application',
+        component: Application,
+        meta: {
+            user: true
         }
     }
 ]
