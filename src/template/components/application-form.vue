@@ -82,6 +82,9 @@
             <span class="round"><icon icon="plus" /></span>
         </button>
         </div>
+        <div class="input-group" v-if="error.empty">
+            <p class="error-msg">Please Fill All Fields</p>
+        </div>
         <div class="input-group submit">
             <button
                 @click="submit"
@@ -108,6 +111,9 @@ export default {
                 address: '',
                 coverLetter: '',
                 job_slug: ''
+            },
+            error:{
+                empty: false
             }
         }
     },
@@ -126,6 +132,10 @@ export default {
         },
         submit(){
             if(this.loading) return
+            const invalid = Object.entries(this.application)
+                .some(e=> e[0] == 'resume' || e[0] == 'coverLetter' || e[1] ? false : true)
+            if(invalid) return this.error.empty = true
+            this.error.empty = false
             this.loading = true
             this.$store.dispatch('data/applyForJob',this.application)
             .then(r=>{
