@@ -26,7 +26,7 @@
                         <h3 class="field">Cover Letter</h3>
                         <div v-html="application.cover" class="cover-letter"></div>
                     </div>
-                    <div class="info-group" v-if="application.resume">
+                    <div class="info-group" v-if="application.resume && application.resume.file">
                         <button
                             class="bt strip"
                             @click.stop.prevent="showres"
