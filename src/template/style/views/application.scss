@@ -1,0 +1,39 @@
+.job-app-view{
+    border-radius: 10px;
+    .col{
+        width: 50%;
+        &.job{
+            background: #d9d2ec;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+    .box{
+        padding: 30px 40px;
+        .title{
+            text-align: center;
+            border-bottom: 2px solid;
+            margin-bottom: 15px;
+            padding-bottom: 9px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.info-group {
+    margin: 20px 0;
+    .field{
+        font-size: 18px;
+    }
+    .info{
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    &.action{
+        margin: -10px;
+        .bt{
+            margin: 10px;
+        }
+    }
+}

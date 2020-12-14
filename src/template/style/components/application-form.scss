@@ -11,6 +11,12 @@
 .resume-view{
     display: flex;
     align-items: center;
+    .bt.remove{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
 }
 
 .bt.action{

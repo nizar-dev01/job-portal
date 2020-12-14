@@ -28,19 +28,30 @@
             display: block;
         }
         .dropdown{
+            $brd: 5px;
             display: none;
             position: absolute;
             top: 105%;
             right: 0;
             padding: 10px;
             width: 150px;
-            border-radius: 5px;
-            overflow: hidden;
+            border-radius: $brd;
+            &::before{
+                content:'';
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                height: 20px;
+                display: block;
+                background: transparent;
+            }
             .menu-list{
                 margin: -10px;
                 li{
                     padding: 10px;
                     color: $cl;
+                    border-radius: $brd;
                     &:hover{
                         background: $cl;
                         color: white;
