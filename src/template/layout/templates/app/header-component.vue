@@ -17,6 +17,20 @@
           <ul class="menu-list">
             <li
               class="logout"
+              @click="$router.push('/applications').catch(e=>e)"
+              v-if="userType === 0"
+            >
+              Job Applications
+            </li>
+            <li
+              class="logout"
+              @click="$router.push('/job/create').catch(e=>e)"
+              v-if="userType === 0"
+            >
+              Create a Job
+            </li>
+            <li
+              class="logout"
               @click="logout"
               v-if="loggedIn"
             >
@@ -28,13 +42,6 @@
               v-else
             >
               Login
-            </li>
-            <li
-              class="logout"
-              @click="$router.push('/job/create').catch(e=>e)"
-              v-if="userType === 0"
-            >
-              Create a Job
             </li>
           </ul>
       </div>
