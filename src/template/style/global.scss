@@ -103,6 +103,9 @@ button {
     border-radius: 15px;
     margin: -10px;
     margin-bottom: 80px;
+    @include sm {
+        padding: 25px 30px;
+    }
 }
 
 .input{
@@ -134,6 +137,10 @@ button {
     text-align: center;
     font-size: 40px;
     margin-bottom: 55px;
+    @include sm {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
 }
 
 

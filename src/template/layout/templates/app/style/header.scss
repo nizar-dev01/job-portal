@@ -13,9 +13,16 @@
             font-size: 50px;
             display: block;
             line-height: 50px;
+            @include sm{
+                font-size: 30px;
+                line-height: 25px;
+            }
         }
         .descr{
             font-size: 16px;
+            @include sm{
+                font-size: 12px;
+            }
         }
     }
     .bt.menu{
@@ -24,6 +31,11 @@
         width: $ofst;
         height: $ofst;
         position: relative;
+        @include sm{
+            $ofst: 35px;
+            width: $ofst;
+            height: $ofst;
+        }
         &:hover .dropdown{
             display: block;
         }

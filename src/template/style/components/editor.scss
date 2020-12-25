@@ -5,6 +5,12 @@
 .input-group.submit{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    .bt{
+        @include sm {
+            flex-grow: 1;
+        }
+    }
 }
 .bt.view{
     $ofst: 35px;
