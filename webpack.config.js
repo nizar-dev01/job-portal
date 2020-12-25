@@ -4,14 +4,6 @@ const src = "src";
 const template = `${src}/template`;
 
 module.exports = {
-    module:{
-        rules:[
-            {
-                test: /\.mp4$/,
-                use:'file-loader'
-            }
-        ]
-    },
     resolve:{
         extensions: ['.js','.vue','.scss', '.json'],
         alias:{
