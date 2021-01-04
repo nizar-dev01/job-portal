@@ -6,7 +6,7 @@
                 users:[
                     {
                         name: 'Recruiter One',
-                        email: 'recruiter@abc.in',
+                        email: 'recruiter@job.com',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address of Recruiter 1, Example Street',
@@ -15,7 +15,7 @@
                     },
                     {
                         name: 'Candidate One',
-                        email: 'candidate@abc.in',
+                        email: 'candidate@job.com',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address of Candidate 1, Example Street',
@@ -24,7 +24,7 @@
                     },
                     {
                         name: 'Thomas',
-                        email: 'thomas@abc.in',
+                        email: 'thomas@job.com',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address Line 1, Example Street',
@@ -33,7 +33,7 @@
                     },
                     {
                         name: 'Melissa',
-                        email: 'melissa@abc.in',
+                        email: 'melissa@job.com',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address Line 1, Example Street',
@@ -81,7 +81,7 @@
                         id: 1,
                         slug: 'app-1-slug',
                         name: 'Imaginary Candidate',
-                        email: 'candidate@abc.in',
+                        email: 'candidate@job.com',
                         phone: '+91 456378213509',
                         address: 'Atlantis island',
                         resume: null,
@@ -283,7 +283,8 @@
             // userType: () => 0,
             userId: s => s.loggedIn ? s.loggedIn.id : null,
             applications: s => s.applications,
-            user: s => s.loggedIn
+            user: s => s.loggedIn,
+            users: s=> s.users
         }
     }
 

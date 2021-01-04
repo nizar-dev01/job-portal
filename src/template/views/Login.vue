@@ -45,6 +45,14 @@
                 loading: false
             }
         },
+        computed:{
+            users(){
+                return this.$store.getters['data/users'].map(u=> ({
+                    username: u.email,
+                    password: u.password
+                }))
+            }
+        },
         methods:{
             submit(){
                 const {email,password} = this
@@ -67,6 +75,10 @@
                     this.errorMsg = null
                 }.bind(this),1200)
             }
+        },
+        created(){
+            console.log("AVAILABLE USERS")
+            console.log(this.users)
         }
     }
 </script>
