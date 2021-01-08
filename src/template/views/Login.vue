@@ -32,6 +32,21 @@
             >Login</button>
         </div>
     </div>
+    <div class="users" v-if="users" :class="{show: showUsers}">
+        <div class="open-bt" @click="showUsers = !showUsers">
+            Select User
+        </div>
+        <div class="users-wrapper">
+            <div
+                class="user"
+                v-for="(user,i) in users"
+                :key="i"
+                @click="selectUser(user)"
+            >
+                {{ user.username }}
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -42,7 +57,8 @@
                 email: '',
                 password: '',
                 errorMsg: null,
-                loading: false
+                loading: false,
+                showUsers: false
             }
         },
         computed:{
@@ -74,6 +90,11 @@
                 setTimeout(function(){
                     this.errorMsg = null
                 }.bind(this),1200)
+            },
+            selectUser(user){
+                this.email = user.username
+                this.password = user.password
+                this.showUsers = false
             }
         },
         created(){

@@ -8,3 +8,48 @@
     line-height: 0;
     text-align: right;
 }
+
+.users{
+    background: white;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    box-shadow: 0 0 20px -5px #d2d2d2;
+    border-radius: 13px 0 0 13px;
+    border: 3px solid;
+    border-right: 0;
+    transition: transform 0.4s ease-in-out;
+    transform: translate(100%,-50%);
+    &.show{
+        transform: translate(0,-50%);
+    }
+    .open-bt{
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 10px;
+        background: #200955;
+        border-radius: inherit;
+        width: 115px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        user-select: none;
+        cursor: pointer;
+    }
+    .users-wrapper{
+        border-radius: inherit;
+        overflow: hidden;
+    }
+    .user{
+        font-weight: bold;
+        padding: 20px;
+        user-select: none;
+        cursor: pointer;
+        &:hover{
+            background: #200955;
+            color: white;
+        }
+    }
+}

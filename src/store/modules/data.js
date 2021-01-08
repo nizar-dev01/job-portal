@@ -6,7 +6,7 @@
                 users:[
                     {
                         name: 'Recruiter One',
-                        email: 'recruiter@job.com',
+                        email: 'recruiter@job.portal',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address of Recruiter 1, Example Street',
@@ -15,7 +15,7 @@
                     },
                     {
                         name: 'Candidate One',
-                        email: 'candidate@job.com',
+                        email: 'candidate@job.portal',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address of Candidate 1, Example Street',
@@ -24,7 +24,7 @@
                     },
                     {
                         name: 'Thomas',
-                        email: 'thomas@job.com',
+                        email: 'thomas@job.portal',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address Line 1, Example Street',
@@ -33,7 +33,7 @@
                     },
                     {
                         name: 'Melissa',
-                        email: 'melissa@job.com',
+                        email: 'melissa@job.portal',
                         password: 'password',
                         phone: '+91 768584732134',
                         address: 'Address Line 1, Example Street',
@@ -81,7 +81,7 @@
                         id: 1,
                         slug: 'app-1-slug',
                         name: 'Imaginary Candidate',
-                        email: 'candidate@job.com',
+                        email: 'candidate@job.portal',
                         phone: '+91 456378213509',
                         address: 'Atlantis island',
                         resume: null,
